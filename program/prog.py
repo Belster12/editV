@@ -8,4 +8,4 @@ def rename_files(path, new_name, extention):
     for (i, filename) in enumerate(natsorted(os.listdir(path))):
         os.rename(src=filename, dst='{}{}{}' .format(new_name,i,extention))
         
-rename_files ('/home/kalinx/Desktop/program/video/', 'video', '.mp4' )
+rename_files('C:/editV-main4/program/video/', 'video', '.mp4' )
