@@ -1,0 +1,73 @@
+print("1: 6 видео\n2: 12 видео\n3: 18 видео")
+var = input()
+title = ImageClip("Photo1.jpg").set_start(0).set_duration(7).set_pos(("center","center")).set_opacity(0.7)
+title = title.fx( vfx.resize, width=250, height=400)
+title.resize(width=100, height=120, apply_to_mask=True)
+title = title.set_duration(title.duration + 1).set_position("center").set_audio(title).set_start(start_time)
+
+    
+if var == 1:  
+    if var == 1:
+        clip = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video0.mp4')
+        clip1 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video1.mp4')
+        clip2 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video2.mp4')
+        clip3 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video3.mp4')
+        clip4 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video4.mp4')
+        clip5 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video5.mp4')
+        clip6 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video6.mp4')
+        
+        final = CompositeVideoClip([clip, title])
+        final1 = CompositeVideoClip([clip1, title])
+        final2 = CompositeVideoClip([clip2, title])
+        final3= CompositeVideoClip([clip3, title])
+        final4 = CompositeVideoClip([clip4, title])
+        final5 = CompositeVideoClip([clip5, title])
+        
+        final = final.subclip(0, 7)
+        final1 = final1.subclip(0, 7)
+        final2 = final2.subclip(0, 7)
+        final3 = final3.subclip(0, 7)
+        final4 = final4.subclip(0, 7)
+        final5 = final5.subclip(0, 7)
+        
+        final.write_videofile("test.mp4")
+        final1.write_videofile("test1.mp4")
+        final2.write_videofile("test2.mp4")
+        final3.write_videofile("test3.mp4")
+        final4.write_videofile("test4.mp4")
+        final5.write_videofile("test5.mp4")
+    elif var == 2:
+        clip = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video0.mp4')
+        clip1 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video1.mp4')
+        clip2 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video2.mp4')
+        clip3 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video3.mp4')
+        clip4 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video4.mp4')
+        clip5 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video5.mp4')
+        clip6 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video6.mp4')
+        clip7 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video7.mp4')
+        clip8 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video8.mp4')
+    elif var == 3:
+        clip = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video0.mp4')
+        clip1 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video1.mp4')
+        clip2 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video2.mp4')
+        clip3 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video3.mp4')
+        clip4 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video4.mp4')
+        clip5 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video5.mp4')
+        clip6 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video6.mp4')
+        clip7 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video7.mp4')
+        clip8 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video8.mp4')
+        clip9= VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video9.mp4')
+        clip10 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video10.mp4')
+        clip11 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video11.mp4')
+        clip12 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video11.mp4')
+        clip13 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video11.mp4')
+        clip14 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video11.mp4')
+        clip15 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video11.mp4')
+        clip16 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video11.mp4')
+        clip17 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video11.mp4')
+        clip18 = VideoFileClip('/Users/PC-ASUS/Desktop/program/video/video11.mp4')
+    else :
+        print(Ошибка)
+elif var == 2:
+
+
