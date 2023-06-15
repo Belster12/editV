@@ -5,6 +5,8 @@ from natsort import natsorted
 from pathlib import Path
 import os
 
+
+#Удаление папки done
 try:
     shutil.rmtree('/home/kalinx/Desktop/editV-main/program/done') 
 except:
@@ -60,8 +62,10 @@ except:
                 final = CompositeVideoClip([clip, title.set_position("center")])
                 final = final.subclip(0, 7)
                 final.write_videofile(f"/home/kalinx/Desktop/editV-main/program/done/video{h}test{i}_{j}.mp4", fps=clip.fps)
-
-
+        #Удаление файлов из Video
+        os.remove ('/home/kalinx/Desktop/editV-main/program/video/video{i}.mp4')
+   
+   
     except BrokenPipeError as e:
         print("Произошла ошибка BrokenPipeError:", e)
 
